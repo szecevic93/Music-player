@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muzicki player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4d10b401fb.js"></script>
+</head>
+
+<body>
+
+    <audio id="player" ontimeupdate="updateProgress()">
+        <source id="source">
+    </audio>
+    
+    <span id="trenutnoSvira"></span><em><span id="trenutnaPesma"></span></em>
+    
+    <progress id="progressBar" value="0" max="100"></progress>
+    
+    <div id="kontrole">
+        <i class="far fa-play-circle fa-5x" onclick="pokreniPesmu()"></i>
+        <i class="far fa-pause-circle fa-5x" onclick="pauzirajPesmu()"></i>
+        <p>Jacina zvuka</p>
+        <i class="fas fa-volume-down"></i>
+        <input type="range" id="volumeKlizac" min="0" max="1" step="0.01">
+        <i class="fas fa-volume-up"></i>
+    </div>
+    
+    <h2>Lista pesama</h2>
+    <div id="listaPesama">
+<!--
+        <ol>
+            <li>creativeminds.mp3</li>
+            <li>funnysong.mp3</li>
+            <li>happyrock.mp3</li>
+            <li>jazzfrenchy.mp3</li>
+            <li>summer.mp3</li>
+            <li>ukulele.mp3</li>
+        </ol>
+-->
+    </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>

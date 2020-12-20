@@ -1,0 +1,36 @@
+:root {
+    --primary: #037190;    /* zelena */
+    --secondary: #ce96fb;  /* violet */
+}
+body {
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(bg.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+#listaPesama,
+#kontrole {
+    background: var(--primary);
+    border: 3px solid var(--secondary);
+    padding: 50px;
+    border-radius: 10px;
+    width: 50%;
+}
+li {
+    line-height: 2;
+}
+i {
+    color: var(--secondary);
+}
+i:hover,
+li:hover {
+    cursor: pointer;
+}
+progress {
+    margin: 20px 0;
+    width: 50%;
+}
